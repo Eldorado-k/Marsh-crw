@@ -1232,7 +1232,7 @@ async def removetutorial(bot, message):
 async def stop_button(bot, message):
     msg = await bot.send_message(text="**🔄 𝙿𝚁𝙾𝙲𝙴𝚂𝚂𝙴𝚂 𝚂𝚃𝙾𝙿𝙴𝙳. 𝙱𝙾𝚃 𝙸𝚂 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶...**", chat_id=message.chat.id)       
     await asyncio.sleep(3)
-    await msg.edit("**✅️ 𝙱𝙾𝚃 𝙸𝚂 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙴𝙳. 𝙽𝙾𝚆 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝙼𝙴**")
+    await msg.edit("**✅️ Bot Redearrer ous ouvez m'utilisé maintenant**")
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 @Client.on_message(filters.command("nofsub"))
@@ -1315,7 +1315,7 @@ async def give_premium_cmd_handler(client, message):
             await message.reply_text("Premium access added to the user.")            
             await client.send_message(
                 chat_id=user_id,
-                text=f"<b>ᴘʀᴇᴍɪᴜᴍ ᴀᴅᴅᴇᴅ ᴛᴏ ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ꜰᴏʀ {time} ᴇɴᴊᴏʏ 😀\n</b>",                
+                text=f"<b>Premuim ajouté à votre compte pour {time}\nContent ? 😀</b>",                
             )
         else:
             await message.reply_text("Invalid time format. Please use '1day for days', '1hour for hours', or '1min for minutes', or '1month for months' or '1year for year'")
@@ -1342,7 +1342,7 @@ async def remove_premium_cmd_handler(client, message):
             await message.reply_text("Premium access removed to the user.")
             await client.send_message(
                 chat_id=user_id,
-                text="<b>premium removed by admins \n\n Contact Admin if this is mistake \n\n 👮 Admin : {} \n</b>".format(OWNER_LNK),                
+                text="<b>Premium supprimé par les administrateurs \n\n Contactez un administrateur si c'est une erreur \n\n 👮 Administrateur : {} \n</b>".format(OWNER_LNK),                
             )
         else:
             await message.reply_text("Invalid time format.'")
@@ -1354,8 +1354,8 @@ async def plans_cmd_handler(client, message):
     if PREMIUM_AND_REFERAL_MODE == False:
         return 
     btn = [            
-        [InlineKeyboardButton("ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ 🧾", url=OWNER_LNK)],
-        [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
+        [InlineKeyboardButton("Envoyer le reçu de paiement 🧾", url=OWNER_LNK)],
+        [InlineKeyboardButton("⚠️ Fermer / Supprimer ⚠️", callback_data="close_data")]
     ]
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
@@ -1372,16 +1372,16 @@ async def check_plans_cmd(client, message):
     if await db.has_premium_access(user_id):         
         remaining_time = await db.check_remaining_uasge(user_id)             
         expiry_time = remaining_time + datetime.datetime.now()
-        await message.reply_text(f"**Your plans details are :\n\nRemaining Time : {remaining_time}\n\nExpirytime : {expiry_time}**")
+        await message.reply_text(f"**Les détails de vos forfaits sont :\n\nTemps restant : {remaining_time}\n\nExpiration : {expiry_time}**")
     else:
         btn = [ 
-            [InlineKeyboardButton("ɢᴇᴛ ғʀᴇᴇ ᴛʀᴀɪʟ ғᴏʀ 𝟻 ᴍɪɴᴜᴛᴇꜱ ☺️", callback_data="get_trail")],
-            [InlineKeyboardButton("ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅs", callback_data="buy_premium")],
-            [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
+            [InlineKeyboardButton("Obtenez un essai gratuit de 5 minutes ☺️", callback_data="get_trail")],
+            [InlineKeyboardButton("Acheter un abonnement : supprimer les pub", callback_data="buy_premium")],
+            [InlineKeyboardButton("⚠️ Fermer / Supprimer ⚠️", callback_data="close_data")]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
-        m=await message.reply_sticker("CAACAgIAAxkBAAIBTGVjQbHuhOiboQsDm35brLGyLQ28AAJ-GgACglXYSXgCrotQHjibHgQ")         
-        await message.reply_text(f"**😢 You Don't Have Any Premium Subscription.\n\n Check Out Our Premium /plan**",reply_markup=reply_markup)
+        m=await message.reply_sticker("CAACAgQAAxkBAAEO0oloYwO_iVS7FZrQPS2SxNrP9tmcPgACJQADgFBqE9a3B6ADgTUwNgQ")         
+        await message.reply_text(f"**😢 Vous n'avez aucun abonnement premium.\n\n Découvrez notre offre Premium /plan**",reply_markup=reply_markup)
         await asyncio.sleep(2)
         await m.delete()
 
