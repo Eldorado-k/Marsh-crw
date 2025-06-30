@@ -607,18 +607,12 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
         ENABLE_SHORTLINK = False
     try:
         if ENABLE_SHORTLINK:
-    for file in files:
-        title = file["file_name"]
-        size = get_size(file["file_size"])
-        if not await db.has_premium_access(userid) and SHORTLINK_MODE == True:
-            await bot.send_message(
-                chat_id=userid,
-                text=f"<b>Salut {user_name} 👋🏽 \n\n✅ Lien sécurisé vers votre fichier généré avec succès, veuillez cliquer sur le bouton de téléchargement\n\n🗃️ Nom du fichier : {title}\n🔖 Taille du fichier : {size}</b>",
-                reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("📤 Télécharger 📥", url=await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}"))]]
-                )
-            )
-else:
+            for file in files:
+                title = file["file_name"]
+                size = get_size(file["file_size"])
+                if not await db.has_premium_access(userid) and SHORTLINK_MODE == True:
+                    await bot.send_message(chat_id=userid, text=f"<b>Salut {user_name} 👋🏽 \n\n✅  Le lien sécurisé vers votre fichier a été généré avec succès. Veuillez cliquer sur le bouton de téléchargement.\n\n🗃️ Nom du fichier : {title}\n🔖 Poids du fichier : {size}</b>", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📤 Téléchargé 📥", url=await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}"))]]))
+        else:
     for file in files:
         f_caption = file["caption"]
         title = file["file_name"]
