@@ -14,7 +14,7 @@ Je Suis Marsh ƈɾσɯ V2.0 je suis un puissant bot Marsh ƈɾσɯ Je peux vous 
     HELP_TXT = """<b>ʙᴏɴᴊᴏᴜʀ {}
 ᴠᴏɪᴄɪ ᴛᴏᴜᴛᴇs ᴍᴇs ғᴏɴᴄᴛɪᴏɴɴᴀʟɪᴛᴇ́s ᴜᴛɪʟᴇs.</b>"""
 
-ABOUT_TXT = """<b><blockquote>⍟───[ ᴍᴇs ɪɴғᴏʀᴍᴀᴛɪᴏɴs ]───⍟</blockquote>
+    ABOUT_TXT = """<b><blockquote>⍟───[ ᴍᴇs ɪɴғᴏʀᴍᴀᴛɪᴏɴs ]───⍟</blockquote>
 
 ‣ ɴᴏᴍ ᴅᴜ ʙᴏᴛ : <a href=https://t.me/{}>{}</a>
 ‣ ᴍᴏɴ ᴍᴇɪʟʟᴇᴜʀ ᴀᴍɪ : <a href='tg://settings'>ᴄᴇᴛᴛᴇ ᴘᴇʀsᴏɴɴᴇ</a> 
@@ -52,7 +52,7 @@ Si {} utilisateurs uniques démarrent le bot avec votre lien de parrainage, vous
 
 Achetez un abonnement payant via - /plan</b>"""
 
-MANUELFILTER_TXT = """Aide : <b>Filtres</b>
+    MANUELFILTER_TXT = """Aide : <b>Filtres</b>
 - Le filtre est une fonction qui permet de définir des réponses automatiques pour un mot-clé spécifique.
 
 <b>Note :</b>
@@ -66,7 +66,7 @@ Commandes :
 • /del - <code>supprimer un filtre spécifique</code>
 • /delall - <code>supprimer tous les filtres (propriétaire uniquement)</code>"""
 
-BUTTON_TXT = """Aide : <b>Boutons</b>
+    BUTTON_TXT = """Aide : <b>Boutons</b>
 - Ce bot supporte les boutons URL et d'alerte.
 
 <b>Note :</b>
@@ -80,7 +80,7 @@ BUTTON_TXT = """Aide : <b>Boutons</b>
 <b>Boutons d'alerte :</b>
 <code>[Texte](buttonalert:Message d'alerte)</code>"""
 
-AUTOFILTER_TXT = """Aide : <b>Filtre automatique</b>
+    AUTOFILTER_TXT = """Aide : <b>Filtre automatique</b>
 <b>Note : Indexation de fichiers</b>
 1. Ajoutez-moi comme admin dans votre chaîne.
 2. Assurez-vous que votre chaîne ne contient pas de contenu inapproprié.
@@ -91,7 +91,7 @@ AUTOFILTER_TXT = """Aide : <b>Filtre automatique</b>
 2. Utilisez /connect pour lier votre groupe.
 3. Activez le filtre automatique dans les paramètres."""
 
-CONNECTION_TXT = """Aide : <b>Connexions</b>
+    CONNECTION_TXT = """Aide : <b>Connexions</b>
 - Permet de connecter le bot en MP pour gérer les filtres.
 
 <b>Note :</b>
@@ -103,7 +103,7 @@ Commandes :
 • /disconnect - <code>déconnecter</code>
 • /connections - <code>lister les connexions</code>"""
 
-EXTRAMOD_TXT = """Aide : <b>Modules supplémentaires</b>
+    EXTRAMOD_TXT = """Aide : <b>Modules supplémentaires</b>
 <b>Note :</b>
 <b>✯ Maintenu par : <a href={}>Propriétaire</a></b>
 <b>✯ Chaîne : <a href={}>Mises à jour</a></b>
@@ -117,7 +117,7 @@ Commandes :
 /video - <code>télécharger une vidéo YouTube</code>
 /font - <code>générateur de polices stylisées</code>"""
 
-ADMIN_TXT = """Aide : <b>Admin</b>
+    ADMIN_TXT = """Aide : <b>Admin</b>
 <b>Note : Réservé aux admins</b>
 
 Commandes :
@@ -133,7 +133,7 @@ Commandes :
 • /channel - <code>liste des chaînes</code>
 • /broadcast - <code>diffuser un message</code>"""
 
-STATUS_TXT = """<b>Total fichiers : <code>{}</code>
+    STATUS_TXT = """<b>Total fichiers : <code>{}</code>
 Utilisateurs : <code>{}</code>
 Chats : <code>{}</code>
 Espace utilisé : <code>{} MB</code>
@@ -148,7 +148,7 @@ Nom <b>: {}</b>
 
 Message <b>: {}</b>"""
 
-CAPTION = """<b>📂 Nom du fichier : {file_name}
+    CAPTION = """<b>📂 Nom du fichier : {file_name}
 
 Rej𝗈𝗂𝗇s ➥ <a href='t.me/ZFlixTeam'>ZFʟɪx-Tᴇᴀᴍ</a></b>"""
 
@@ -171,10 +171,10 @@ Données IMDb :
 
 Demandé par : {message.from_user.mention}</b>"""
 
-ALL_FILTERS = """
+    ALL_FILTERS = """
 <b>Salut {}, Voici mes trois types de filtres.</b>"""
 
-GFILTER_TXT = """
+    GFILTER_TXT = """
 <b>Bienvenue aux Filtres Globaux. Les Filtres Globaux sont des filtres définis par les admins du bot qui fonctionnent dans tous les groupes.</b>
 
 Commandes disponibles :
@@ -183,7 +183,7 @@ Commandes disponibles :
 • /delg - <code>Supprimer un filtre global spécifique</code>
 • /delallg - <code>Supprimer tous les filtres globaux</code>"""
 
-FILE_STORE_TXT = """
+    FILE_STORE_TXT = """
 <b>Le Stockage de Fichiers est une fonctionnalité qui crée un lien partageable pour un ou plusieurs fichiers.</b>
 
 Commandes disponibles :
@@ -192,13 +192,13 @@ Commandes disponibles :
 • /pbatch - <code>Comme /batch mais avec restrictions de transfert</code>
 • /plink - <code>Comme /link mais avec restrictions de transfert</code>"""
 
-SONG_TXT = """<b>Module de téléchargement de musique</b>
+    SONG_TXT = """<b>Module de téléchargement de musique</b>
 
 <b>Module pour télécharger de la musique. Fonctionne en privé et dans les groupes.</b>
 
 <b>Commande :</b> <code>/song nom_de_la_chanson</code>"""
 
-YTDL_TXT = """<b>Aide pour télécharger des vidéos YouTube.</b>
+    YTDL_TXT = """<b>Aide pour télécharger des vidéos YouTube.</b>
 
 <b>Usage : Vous pouvez télécharger n'importe quelle vidéo YouTube.</b>
 
@@ -206,11 +206,11 @@ YTDL_TXT = """<b>Aide pour télécharger des vidéos YouTube.</b>
 
 <b>Exemple :</b> <code>/mp4 https://youtu.be/exemple...</code>"""
 
-TTS_TXT = """<b>Module TTS 🎤 : Convertit du texte en parole</b>
+    TTS_TXT = """<b>Module TTS 🎤 : Convertit du texte en parole</b>
 
 <b>Commande :</b> <code>/tts [texte]</code>"""
 
-GTRANS_TXT = """<b>Aide : Traduction Google</b>
+    GTRANS_TXT = """<b>Aide : Traduction Google</b>
 
 <b>Ce commande permet de traduire du texte dans différentes langues.</b>
 
@@ -221,13 +221,13 @@ GTRANS_TXT = """<b>Aide : Traduction Google</b>
 • en = Anglais
 • es = Espagnol"""
 
-TELE_TXT = """<b>Aide : Module Telegraph</b>
+    TELE_TXT = """<b>Aide : Module Telegraph</b>
 
 <b>Usage : Envoyez-moi une photo ou vidéo (moins de 5MB) avec /telegraph</b>
 
 <b>Note : Disponible en privé et dans les groupes.</b>"""
 
-CORONA_TXT = """<b>Aide : Informations COVID</b>
+    CORONA_TXT = """<b>Aide : Informations COVID</b>
 
 <b>Cette commande fournit des statistiques sur le COVID.</b>
 
@@ -252,7 +252,7 @@ Vous pouvez convertir un fichier PDF en fichier audio avec cette commande ✯
 Commandes et usage :
 /audiobook : Répondez à cette commande avec un PDF pour générer l'audio</b>"""
 
-PINGS_TXT = """<b>Test de ping : Vous permet de connaître votre ping 🪄
+    PINGS_TXT = """<b>Test de ping : Vous permet de connaître votre ping 🪄
   
 Commandes :
 • /alive - Vérifie que le bot est actif
@@ -264,20 +264,20 @@ Usage :
 • Tout le monde peut utiliser ces commandes
 • Partagez-nous pour plus de fonctionnalités</b>"""
 
-STICKER_TXT = """<b>Vous pouvez utiliser ce module pour trouver l'ID d'un autocollant
+    STICKER_TXT = """<b>Vous pouvez utiliser ce module pour trouver l'ID d'un autocollant
 • Usage : Pour obtenir l'ID d'un autocollant
    
 ⭕ Comment utiliser
 /stickerid</b>"""
 
-FONT_TXT = """<b>Usage
+    FONT_TXT = """<b>Usage
   
 Vous pouvez utiliser ce module pour changer le style de police
   
 Commande : /font votre_texte (optionnel)
 Exemple : /font Bonjour</b>"""
 
-PURGE_TXT = """<b>Purge
+    PURGE_TXT = """<b>Purge
       
 Supprime un grand nombre de messages dans les groupes !
       
@@ -285,12 +285,12 @@ Admin seulement
   
 ◉ /purge : Supprime tous les messages depuis le message auquel vous répondez jusqu'au message actuel</b>"""
 
-WHOIS_TXT = """<b>Module Whois
+    WHOIS_TXT = """<b>Module Whois
   
 Note : Donne les détails d'un utilisateur
 /whois : Donne tous les détails d'un utilisateur 📑</b>"""
 
-JSON_TXT = """<b>JSON :  
+    JSON_TXT = """<b>JSON :  
 Le bot retourne le JSON pour tous les messages auxquels vous répondez avec /json
   
 Fonctionnalités :
@@ -303,7 +303,7 @@ Note :
   
 Tout le monde peut utiliser cette commande, en cas de spam le bot bannira automatiquement.</b>"""
 
-URLSHORT_TXT = """<b>Aide : Raccourcisseur d'URL
+    URLSHORT_TXT = """<b>Aide : Raccourcisseur d'URL
   
 <i><b>Cette commande vous aide à raccourcir une URL</i></b>
   
@@ -312,12 +312,12 @@ Commandes et usage :
 /short : <b>Utilisez cette commande avec votre lien pour obtenir un lien raccourci</b>
 Exemple : <code>/short https://youtu.be/exemple...</code></b>"""
 
-CARB_TXT = """<b>Aide pour Carbon
+    CARB_TXT = """<b>Aide pour Carbon
   
 Carbon est une fonctionnalité pour créer une image comme montré en haut avec vos textes.
 Pour utiliser le module, envoyez simplement le texte et répondez avec la commande /carbon, le bot répondra avec l'image carbonisée</b>"""
 
-GEN_PASS = """<b>Aide : Générateur de mot de passe
+    GEN_PASS = """<b>Aide : Générateur de mot de passe
   
 Rien de plus à savoir. Envoyez-moi la longueur souhaitée pour votre mot de passe.
 - Je vous donnerai un mot de passe de cette longueur.
@@ -332,11 +332,11 @@ NOTE :
 • Fonctionne en MP et groupe
 • Utilisable par tous les membres</b>"""
 
-SHARE_TXT = """<b>Obtenez l'URL de partage pour votre texte.
+    SHARE_TXT = """<b>Obtenez l'URL de partage pour votre texte.
   
 - Ex : /share</b>"""
 
-PIN_TXT = """<b>Module d'épinglage
+    PIN_TXT = """<b>Module d'épinglage
   
 Épinglez un message...
   
@@ -347,7 +347,7 @@ Toutes les commandes relatives à l'épinglage :
 /pin : Pour épingler un message dans votre chat
 /unpin : Pour désépingler le message actuellement épinglé</b>"""
 
-RESTART_TXT = """
+    RESTART_TXT = """
 <b>Bot redémarré !
 
 📅 Date : <code>{}</code>
