@@ -97,7 +97,8 @@ async def start(client, message):
             print(e)
             await message.reply_text("Make sure Bot is admin in Forcesub channel")
             return
-        try:btn = [[InlineKeyboardButton("Chaîne de sauvegarde", url=invite_link.invite_link)]]
+        try:
+            btn = [[InlineKeyboardButton("Chaîne de sauvegarde", url=invite_link.invite_link)]]
             if message.command[1] != "subscribe":
                 if REQUEST_TO_JOIN_MODE == True:
                     if TRY_AGAIN_BTN == True:
