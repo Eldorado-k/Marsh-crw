@@ -152,7 +152,7 @@ Message <b>: {}</b>"""
 
 Rej𝗈𝗂𝗇s ➥ <a href='t.me/ZFlixTeam'>ZFʟɪx-Tᴇᴀᴍ</a></b>"""
 
-IMDB_TEMPLATE_TXT = """
+    IMDB_TEMPLATE_TXT = """
 <b>Requête : {qurey}
 
 Données IMDb :
